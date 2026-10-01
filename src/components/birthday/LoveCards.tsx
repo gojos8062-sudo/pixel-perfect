@@ -4,7 +4,7 @@ import { birthdayData } from "@/data/birthdayData";
 import { Reveal } from "./Reveal";
 import { cn } from "@/lib/utils";
 
-const icons = [Smile, Heart, Music2, Sun, Sparkles, Eye];
+const icons = [Smile, Heart, Music2, Sun, Sparkles, Eye] as const;
 
 export function LoveCards() {
   const [open, setOpen] = useState<number | null>(0);
